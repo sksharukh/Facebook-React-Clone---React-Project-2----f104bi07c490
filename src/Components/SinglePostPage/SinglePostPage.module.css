@@ -1,0 +1,169 @@
+.SinglePost_container p {
+  margin: 10px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  /* margin-right: 10px; */
+  margin: 10px;
+}
+
+.profile span {
+  align-items: center;
+  margin-right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.profile img {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+  border-radius: 25px;
+}
+.PostImage {
+  width: 600px;
+}
+.LikeCommentShare {
+  display: flex;
+  justify-content: space-between;
+}
+.LikeCommentShareCount {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+  font-size: 14px;
+}
+.LikeCommentShare button {
+  padding: 8px;
+  border: none;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  margin: 0px 10px;
+}
+.LikeCommentShare span {
+  margin-left: 10px;
+  align-items: center;
+}
+
+.singlePost_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.singlePostImage {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  position: relative;
+}
+.containt {
+  padding: 15px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.commentSectionContainer {
+  height: 100%;
+  overflow: scroll;
+}
+.commentSection {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+}
+.typeComment {
+  display: flex;
+  position: relative;
+}
+.typeComment button {
+  color: gray;
+  /* background-color: white; */
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+}
+.typeComment button:hover {
+  color: black;
+}
+.commentContainer {
+  width: fit-content;
+  background-color: lightgray;
+  border-radius: 15px;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.CommentAuthorName {
+  font-size: 13px;
+  font-weight: 500;
+}
+.commentContent {
+  font-size: 16px;
+}
+textarea {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 10px;
+  margin: 10px 0 0 10px;
+  height: 60px;
+  position: relative;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.crossButton {
+  color: white;
+  background-color: gray;
+  padding: 2px 10px;
+  border-radius: 25px;
+  margin: 10px;
+}
+.crossButton:hover {
+  cursor: pointer;
+}
+/* .headerLeft {
+  display: flex;
+  flex-direction: row;
+} */
+.header img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .singlePost_container {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    margin: 0 10px 10px 0;
+  }
+}
+
+.postBottomButton img {
+  width: 24px;
+}
+
+.LikeCountContainer {
+  display: flex;
+  gap: 6px;
+}
+
+.LikeCountContainerHR {
+  border: 1px solid #ced0d4;
+}

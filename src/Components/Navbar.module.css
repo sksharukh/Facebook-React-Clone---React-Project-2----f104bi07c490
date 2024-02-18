@@ -1,0 +1,197 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 5px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 10px;
+  position: relative;
+  @media only screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
+.navbar_logo {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.logoicon {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.facebookLogoname {
+  display: none;
+}
+.navbar_search{
+}
+.modal {
+  position: absolute;
+  top: 100%;
+  left: -10px;
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 10;
+  overflow: scroll;
+}
+
+ul.searchResults {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul.searchResults li {
+  padding: 2px 10px;
+  cursor: pointer;
+}
+ul.searchResults li:hover {
+  background-color: rgb(186, 186, 186);
+  transition: 0.5s;
+}
+.serchList{
+  display: flex;
+  align-items: center;
+}
+.userProfile{
+  width: 32px;
+  height: 32px;
+  margin-right: 14px;
+}
+.userProfile img{
+  border-radius: 50px;
+}
+.friend{
+  font-size: 12px;
+  color: gray;
+}
+ul.searchResults li:last-child {
+  border-bottom: none;
+}
+.navbar_search input {
+  padding: 6px 12px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  width: 250px;
+  background-color: #f1f1f1;
+  margin: 0px 0 0 10px;
+  cursor: pointer;
+}
+.navSearchIcon {
+  display: none;
+}
+
+.navbar_icons button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  color: gray;
+  transition: transform 100ms ease-in;
+}
+.navbar_icons button:hover {
+  cursor: pointer;
+  color: blue;
+  transform: scale(1.07);
+}
+.navbar_icons svg {
+  width: 36px;
+  height: 32px;
+  @media only screen and (max-width: 600px) {
+    width: 30px;
+    height: 25px;
+  }
+}
+
+.navbar_buttons {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
+
+.navbar_mobile_profile {
+  display: none;
+  @media only screen and (max-width: 600px) {
+    display: block;
+    width: 32px;
+    height: 32px;
+    margin-right: 5px;
+    border-radius: 50%;
+    margin-top: -4px;
+  }
+}
+.navbar_buttons span {
+  align-items: center;
+  margin-right: 10px;
+}
+.navbar_buttons button {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: lightgray;
+  color: black;
+  transition: transform 100ms ease-in;
+  cursor: pointer;
+}
+.navbar_buttons button:disabled {
+  cursor: not-allowed;
+}
+
+.navbar_buttons button:hover {
+  color: black;
+  transform: scale(1.07);
+}
+.navbar_buttons img {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+.navbar_icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar_search input {
+    display: none;
+  }
+  .navSearchIcon {
+    display: block;
+    cursor: pointer;
+  }
+  
+  .search_and_profile {
+    display: flex;
+    gap: 16px;
+  }
+  .logoicon {
+    display: none;
+  }
+  .facebookLogoname {
+    display: flex;
+    width: 120px;
+    margin: -28px 0 -16px 0;
+  }
+  .navbar_icons {
+    gap: 10px;
+    width: 85%;
+  }
+}
